@@ -54,7 +54,7 @@ open class TaskQueue: CustomStringConvertible {
         }
     }
 
-    fileprivate var cancelled = false
+    open var cancelled = false
     open func cancel() {
         cancelled = true
     }
